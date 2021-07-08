@@ -9,11 +9,8 @@ Pod::Spec.new do |s|
   s.authors             = { 'img.ly GmbH' => 'contact@img.ly' }
 
   s.platform            = :ios, '9.0'
-  s.source              = { :http => "https://github.com/imgly/pesdk-ios-build/releases/download/#{s.version.to_s}/PhotoEditorSDK.zip" }
+  s.source              = { :http => "https://releases.photoeditorsdk.com/ios/PhotoEditorSDK-#{s.version.to_s}.xcframework.zip" }
 
-  # s.preserve_paths      = 'PhotoEditorSDK.framework', 'PhotoEditorSDK.framework.dSYM'
-  # s.public_header_files = 'PhotoEditorSDK.framework/Headers/*.h'
-  # s.source_files        = 'PhotoEditorSDK.framework/Headers/*.h'
   s.vendored_frameworks = 'PhotoEditorSDK.xcframework'
 
   s.frameworks          = 'Accelerate', 'AVFoundation', 'CFNetwork', 'CoreGraphics', 'CoreImage', 'CoreLocation', 'CoreMotion', 'CoreText', 'Foundation', 'GLKit', 'ImageIO', 'MobileCoreServices', 'OpenGLES', 'Photos', 'UIKit'
