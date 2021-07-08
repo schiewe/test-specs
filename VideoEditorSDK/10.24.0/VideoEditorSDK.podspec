@@ -9,11 +9,8 @@ Pod::Spec.new do |s|
   s.authors             = { 'img.ly GmbH' => 'contact@img.ly' }
 
   s.platform            = :ios, '9.0'
-  s.source              = { :http => "https://github.com/imgly/vesdk-ios-build/releases/download/#{s.version.to_s}/VideoEditorSDK.zip" }
+  s.source              = { :http => "https://releases.photoeditorsdk.com/ios/VideoEditorSDK-#{s.version.to_s}.xcframework.zip" }
 
-  # s.preserve_paths      = 'VideoEditorSDK.framework', 'VideoEditorSDK.framework.dSYM'
-  # s.public_header_files = 'VideoEditorSDK.framework/Headers/*.h'
-  # s.source_files        = 'VideoEditorSDK.framework/Headers/*.h'
   s.vendored_frameworks = 'VideoEditorSDK.xcframework'
 
   s.frameworks          = 'Accelerate', 'AVFoundation', 'CFNetwork', 'CoreGraphics', 'CoreImage', 'CoreLocation', 'CoreMotion', 'CoreText', 'Foundation', 'GLKit', 'ImageIO', 'MobileCoreServices', 'OpenGLES', 'Photos', 'UIKit'
